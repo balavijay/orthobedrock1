@@ -16,10 +16,10 @@ llm.__class__.metadata = LLMMetadata(
     is_chat_model=True,
     is_function_calling_model=False, 
     model_name="./dataset.jsonl"
-    
+
 )
 
 
-print(llm.chat([ChatMessage(role="user",content="Hi, who are you?")]).message.content)
+print(llm.chat([ChatMessage(role="user",content="what is PSL")]).message.content)
 
 # agent = ReActAgent.from_tools(tools=[],llm=llm)
