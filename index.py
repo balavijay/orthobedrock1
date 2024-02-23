@@ -10,13 +10,13 @@ llm = OpenAI(
 )
 
 # Adjust the below parameters as per the model you've chosen
-llm.__class__.metadata = LLMMetadata(
-    context_window=4000, 
-    num_output=1000,
-    is_chat_model=True,
-    is_function_calling_model=False, 
-    model_name="bedrock/meta.llama2-13b-chat-v1",
-)
+# llm.__class__.metadata = LLMMetadata(
+#     context_window=4000, 
+#     num_output=1000,
+#     is_chat_model=True,
+#     is_function_calling_model=False, 
+#     model_name="bedrock/meta.llama2-13b-chat-v1",
+# )
 
 
 print(llm.chat([ChatMessage(role="user",content="Hi, who are you?")]).message.content)
