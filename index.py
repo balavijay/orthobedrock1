@@ -3,7 +3,7 @@ from llama_index.agent import ReActAgent
 
 
 llm = OpenAI(
-    model="bedrock/meta.llama2-13b-chat-v1",
+    model="davinci",
     api_key="sk-jfoNrqmyPiA_xop2fJ53Wg",
     api_base="https://4veynppxjm.us-east-1.awsapprunner.com",
     temperature=0.1
