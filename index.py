@@ -16,6 +16,7 @@ llm.__class__.metadata = LLMMetadata(
     is_chat_model=True,
     is_function_calling_model=False, 
     model_name="./dataset.jsonl"
+    
 )
 
 
