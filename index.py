@@ -15,7 +15,7 @@ llm.__class__.metadata = LLMMetadata(
     num_output=1000,
     is_chat_model=True,
     is_function_calling_model=False, 
-    model_name="llama_index",
+    model_name="bedrock/meta.llama2-13b-chat-v1",
 )
 
 
