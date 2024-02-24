@@ -12,6 +12,8 @@ POC
 Install the above version with the following command:
 
 ```pip install llama-index==0.9.25.post1```
+```pip install --upgrade pip```
+```pip install flask```
 
 from llama_index.llms import OpenAI, ChatMessage, LLMMetadata
 from llama_index.agent import ReActAgent
