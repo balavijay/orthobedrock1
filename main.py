@@ -27,6 +27,11 @@ def severe():
     f = open("severe.txt", "r")
     return f.read()
 
+@app.route("/normal")
+def normal():
+    f = open("normal.txt", "r")
+    return f.read()
+
 if __name__ == "__main__":
     from waitress import serve
     serve(app, host="0.0.0.0", port=5000)
