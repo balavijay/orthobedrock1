@@ -22,6 +22,12 @@ def send():
     
     return llm.chat([ChatMessage(role="user",content=data["prompt"])]).message.content, 201
 
+@app.route("/severe")
+def severe():
+    f = open("severe.txt", "r")
+
+    print(f.read())
+    return f.read()
 
 if __name__ == "__main__":
     from waitress import serve
