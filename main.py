@@ -25,8 +25,6 @@ def send():
 @app.route("/severe")
 def severe():
     f = open("severe.txt", "r")
-
-    print(f.read())
     return f.read()
 
 if __name__ == "__main__":
